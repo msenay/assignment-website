@@ -14,5 +14,6 @@
 <h3> A lot of improvements can be made this is just a starter </h3>
 
 <h3> for exemaple our system wait for user post right now so it can be improved </h3>
+  <h3> and redis should be in a different container </h3>  
 
 <h5>Thanks</h5>
