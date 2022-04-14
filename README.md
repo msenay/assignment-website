@@ -10,6 +10,7 @@
 <h3>User should post his price to this endpoint : http://localhost:5000/websocket</h3>
 <h3>Format have to be {"symbol":"<coinname>","price":"<price>"}</h3>
 <h3>If user price higher than market price it turns to red otherwise it is green.</h3>
+  <h3> AJAX call is applied in order to show live price (with a latecy ~1sec)</h3>
 
 <h3> A lot of improvements can be made this is just a starter </h3>
 
