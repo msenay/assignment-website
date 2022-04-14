@@ -1,0 +1,9 @@
+version: "2.1"
+
+services:
+  assignment_website:
+    build: .
+    image: assignment_coinpanel_v2
+    container_name: assignment_coinpanel
+    ports:
+      - 5000:5000

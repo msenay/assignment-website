@@ -1,0 +1,2 @@
+class PriceControl():
+    pass
