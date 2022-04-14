@@ -3,8 +3,9 @@
 <img src="public/p2.png">
 <img src="public/p3.png">
 <br>
-<h3>docker-compose build</h3>
-<h3>docker-compose up</h3>
+<h3>please enter these commands:</h3>
+  <h2>docker-compose build</h2>
+  <h2>docker-compose up</h2>
 <h3>Market Price was taken with socket from Binance</h3>
 <h3>User should post his price to this endpoint : http://localhost:5000/websocket</h3>
 <h3>Format have to be {"symbol":"<coinname>","price":"<price>"}</h3>
