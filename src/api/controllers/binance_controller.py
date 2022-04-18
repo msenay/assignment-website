@@ -6,6 +6,20 @@ from redis_files.redis_constructor import RedisConstructor
 
 
 class WsConnect(threading.Thread):
+    """
+    A class to represent a web socket connection.
+
+    ...
+
+    Attributes
+    ----------
+    symbol : str
+        Symbol of the coin
+    Methods
+    -------
+    handle_trades(json_message):
+        takes coin's info and set this info to Redis Server.
+    """
     def __init__(self, symbol):
         threading.Thread.__init__(self)
         self.socket = f'wss://stream.binance.com:9443/ws/{symbol}@trade'  # ethusdt@trade
@@ -22,6 +36,7 @@ class WsConnect(threading.Thread):
 
     @staticmethod
     def handle_trades(json_message):
+        """takes coin's info and set this info to Redis Server"""
         date_time = datetime.datetime.fromtimestamp(json_message['E'] / 1000).strftime('%Y-%m-%d %H:%M:%S')
 
         print("SYMBOL: " + json_message['s'])

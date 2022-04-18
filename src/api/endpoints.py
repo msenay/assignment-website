@@ -29,6 +29,7 @@ def screen():
         if user_price == 0:
             return jsonify({"Symbol": y.get_datas()[0].decode(), "price": y.get_datas()[1].decode()})
         else:
+            print(y.get_datas())
             return jsonify({"Symbol": y.get_datas()[0].decode(), "price": y.get_datas()[1].decode(),
                            "user": user_price})
     return jsonify({"status": False, "message": "Method Not Allowed! ['GET'] Only"}), 405

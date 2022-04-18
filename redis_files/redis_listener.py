@@ -3,6 +3,16 @@ import redis
 
 
 class Listener(threading.Thread):
+    """
+        A class to represent a listener in order to listen a particular channel in Redis.
+
+        ...
+
+        Attributes
+        ----------
+        r : redis connection
+
+        """
     def __init__(self, r):
         threading.Thread.__init__(self)
         self.redis = r
